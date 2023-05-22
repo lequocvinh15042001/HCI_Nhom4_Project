@@ -1,0 +1,79 @@
+.form-no-gutters {
+    margin-top: 1.4rem;
+
+    & > div {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+.wrapper-review {
+    & > div {
+        margin-top: -1rem;
+    }
+}
+
+.comments {
+    width: 94rem;
+    padding-bottom: 1.8rem;
+    margin: 0 auto;
+}
+
+.comment {
+    display: flex;
+    margin-bottom: 1rem;
+
+    &-right-side {
+        max-width: 90%;
+    }
+}
+
+.user-name {
+    display: block;
+    color: var(--primary);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.avatar {
+    height: 6rem;
+    margin-top: 0.6rem;
+    margin-right: 1.2rem;
+}
+
+.created-at {
+    color: #acacac;
+    font-size: 1.4rem;
+}
+
+.comment-content {
+    color: var(--text-color);
+    font-size: 1.6rem;
+}
+
+.button {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    margin-left: 1.2rem;
+    margin-bottom: 2rem;
+    text-transform: none;
+
+    & ~ & {
+        margin-top: 0;
+    }
+
+    &--edit {
+        color: var(--white);
+        border-color: var(--second-primary);
+        background-color: var(--second-primary);
+
+        &:hover {
+            box-shadow: 1px 0px 6px 2px rgb(14 165 229 / 25%);
+        }
+    }
+
+    &--text {
+        padding: 0;
+        border: none;
+    }
+}

@@ -1,0 +1,36 @@
+.action-btn {
+    margin-top: 1.8rem;
+    padding: 1rem;
+    background: #fc751133;
+    border: 0.1rem solid var(--primary);
+    border-radius: 0.3rem;
+
+    color: var(--primary);
+    font-size: 1.6rem;
+
+    transition: all 0.42s ease;
+    user-select: none;
+
+    &--disable {
+        background-color: #0000001f;
+        border-color: #0000001f;
+        color: #00000042;
+
+        pointer-events: none;
+    }
+
+    & ~ & {
+        margin-left: 0.8rem;
+    }
+
+    &:hover {
+        background: var(--white);
+        cursor: pointer;
+    }
+}
+
+.emphasized-text {
+    color: var(--primary);
+    font-size: 1.6rem;
+    font-weight: 600;
+}

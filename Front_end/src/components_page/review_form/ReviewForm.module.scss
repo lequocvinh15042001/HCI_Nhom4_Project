@@ -1,0 +1,22 @@
+.button {
+    text-transform: none;
+    transition: color 0.4s ease-in;
+
+    &-form {
+        padding: 0.2rem 0.6rem;
+        letter-spacing: 0.06rem;
+
+        & ~ & {
+            margin-left: 0.8rem;
+        }
+    }
+
+    &--edit {
+        color: var(--second-primary);
+        border-color: var(--second-primary);
+
+        &:hover {
+            box-shadow: 1px 0px 6px 2px rgb(14 165 229 / 25%);
+        }
+    }
+}

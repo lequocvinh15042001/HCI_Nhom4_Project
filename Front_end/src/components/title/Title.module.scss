@@ -1,0 +1,56 @@
+.title {
+    position: relative;
+    margin-bottom: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+    text-align: left;
+}
+
+.h1 {
+    height: 4.4rem;
+    line-height: 4rem;
+    font-size: 2.4rem;
+}
+
+.h2 {
+    font-size: 2rem;
+}
+
+.h3 {
+    font-size: 1.4rem;
+}
+
+.line {
+    padding-bottom: 1.2rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 0.2rem solid #eee;
+}
+
+.line::before {
+    --width-line: 7.6rem;
+
+    position: absolute;
+    bottom: -0.2rem;
+    left: 0;
+    width: var(--width-line);
+    height: 0.2rem;
+    content: '';
+    background-color: var(--primary);
+}
+
+.center {
+    text-align: center;
+}
+
+.center::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.right {
+    text-align: right;
+}
+
+.right::before {
+    left: calc(100% - var(--width-line));
+}

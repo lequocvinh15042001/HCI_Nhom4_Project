@@ -1,0 +1,137 @@
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 68rem;
+    padding: 1.6rem;
+    margin: 1rem auto;
+}
+
+.info {
+    width: 56rem;
+
+    &__section {
+        display: flex;
+        align-items: center;
+        margin: 0.8rem 0;
+    }
+}
+
+.bold-text {
+    display: inline-block;
+    width: 24rem;
+    margin-right: 0.8rem;
+
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.normal-text {
+    color: #666;
+    font-size: 1.4rem;
+
+    & ~ & {
+        padding-left: 0.4rem;
+        margin-left: 0.6rem;
+        border-left: 1px solid #666;
+    }
+}
+
+.tag {
+    --height: 3rem;
+
+    height: var(--height);
+    padding: 0 0.8rem;
+    border-radius: 2rem;
+
+    color: var(--white);
+    line-height: var(--height);
+    font-size: 1.4rem;
+
+    &--delivery {
+        background-color: #22c55e;
+    }
+
+    &--complete {
+        background-color: var(--second-primary);
+    }
+
+    &--process {
+        background-color: var(--primary);
+    }
+
+    &--pendingpay,
+    &--pending {
+        background-color: #ffd21e;
+    }
+
+    &--cancel {
+        background-color: var(--third-primary);
+    }
+}
+
+// Responsive
+
+/* Mobile, Tablet */
+@media screen and (max-width: 1023px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+    .section {
+        width: 100%;
+    }
+
+    .info {
+        width: 52rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 739px) {
+    .section {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .info {
+        width: 14rem;
+        margin-bottom: 1.4rem;
+
+        &__section {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__summary {
+            display: none;
+        }
+    }
+
+    .bold-text {
+        margin-right: 1.4rem;
+        margin-bottom: 1.2rem;
+        font-size: 1.2rem;
+    }
+
+    .tag {
+        --height: 2.4rem;
+
+        padding: 0 0.4rem;
+        font-size: 1.2rem;
+    }
+
+    .normal-text {
+        & ~ & {
+            padding-left: 0;
+            margin-left: 0;
+            border-left: none;
+        }
+    }
+}

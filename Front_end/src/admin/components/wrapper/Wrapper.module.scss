@@ -1,0 +1,5 @@
+.wrapper {
+    width: calc(100% - var(--width-sidebar));
+    padding: 4rem;
+    padding-bottom: 6rem;
+}

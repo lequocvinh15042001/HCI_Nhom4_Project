@@ -1,0 +1,14 @@
+.wrapper {
+    min-height: calc(100vh - var(--height-header) - var(--height-footer) * 2);
+    width: 56.5rem;
+    padding-top: 1.8rem;
+    margin: 3.56rem auto;
+}
+
+.title {
+    margin-bottom: -4rem;
+}
+
+.buttons {
+    margin-top: 1rem;
+}

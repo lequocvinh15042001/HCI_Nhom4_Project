@@ -1,0 +1,24 @@
+.input-text {
+    width: 100%;
+    padding: 1rem 0.8rem;
+
+    color: var(--text-color);
+    border: 0.1rem solid #dddd;
+    border-radius: 0.6rem;
+}
+
+.invalid-input {
+    border-color: #a94442;
+}
+
+.input-number::-webkit-inner-spin-button,
+.input-number::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.input-number[type='number'] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}

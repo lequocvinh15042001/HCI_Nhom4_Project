@@ -1,0 +1,52 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-top: 0.1rem solid #0000000d;
+    border-right: 0.1rem solid #0000000d;
+    border-bottom: 0.1rem solid #0000000d;
+    border-left: 0.1rem solid transparent;
+    border-radius: 0;
+
+    &__image {
+        --size: 3.2rem;
+
+        width: var(--size);
+        height: var(--size);
+        margin: 1.2rem 0 0.6rem;
+    }
+
+    &__name {
+        margin: 0.6rem 0 1.2rem;
+        color: var(--text-color);
+        font-size: 1.2rem;
+        text-transform: none;
+    }
+
+    &:hover {
+        box-shadow: 1px 0px 6px 2px #0000000d;
+    }
+}
+
+// Responsive
+@media screen and (max-width: 1200px) {
+}
+
+/* Mobile, Tablet */
+@media screen and (max-width: 1023px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* Mobile */
+@media screen and (max-width: 739px) {
+    .card {
+        &__image {
+            --size: 3rem;
+        }
+    }
+}

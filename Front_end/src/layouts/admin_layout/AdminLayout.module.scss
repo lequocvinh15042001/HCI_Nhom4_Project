@@ -1,0 +1,7 @@
+.wrapper {
+    --width-sidebar: 27.5rem;
+
+    display: flex;
+    min-height: calc(100vh - var(--height-footer));
+    background-color: #f2f7ff;
+}

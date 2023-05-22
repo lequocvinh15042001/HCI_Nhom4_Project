@@ -1,0 +1,137 @@
+.wrapper {
+    padding: 1.8rem 0;
+}
+
+.section {
+    width: 98rem;
+    margin: 0 auto;
+}
+
+.title {
+    padding-left: 2.8rem;
+    color: var(--primary);
+}
+
+.btn {
+    position: relative;
+    margin-top: 1.2rem;
+
+    &--avatar {
+        color: var(--text-color);
+        border-color: #00000017;
+    }
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+
+    &-img {
+        height: 20rem;
+        // border-radius: 50%;
+    }
+}
+
+.group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.6rem;
+    padding-right: 4rem;
+
+    &--center {
+        justify-content: center;
+    }
+}
+
+.label-input {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    line-height: 4rem;
+    text-align: right;
+}
+
+.input {
+    width: 100%;
+    padding: 1rem;
+
+    color: var(--text-color);
+    line-height: 1.8rem;
+    font-size: 1.6rem;
+
+    background-color: var(--white);
+    border: 0.1rem solid #d9d9d9;
+    border-radius: 0.6rem;
+
+    &-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        opacity: 0;
+    }
+
+    &--number::-webkit-inner-spin-button,
+    &--number::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+
+    &--number[type='number'] {
+        -moz-appearance: textfield;
+        appearance: textfield;
+    }
+
+    &__error {
+        color: red;
+        font-size: 1.4rem;
+        line-height: 3.4rem;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: #66afe9;
+    }
+}
+
+.disable {
+    cursor: no-drop;
+    background-color: #ddd;
+}
+
+// Responsive
+@media screen and (max-width: 1200px) {
+}
+
+/* Mobile, Tablet */
+@media screen and (max-width: 1023px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+    .section {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 739px) {
+    .section {
+        width: 100%;
+    }
+
+    .group {
+        margin-top: 1.6rem;
+        padding-right: 0;
+
+        &--center {
+            justify-content: center;
+        }
+    }
+
+    .label-input {
+        text-align: left;
+    }
+}

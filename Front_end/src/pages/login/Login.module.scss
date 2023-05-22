@@ -1,0 +1,100 @@
+.wrapper {
+    --form-height: 4rem;
+
+    min-height: calc(100vh - var(--height-header) - var(--height-footer) * 2);
+    width: 56.5rem;
+    padding-top: 1.8rem;
+    margin: 3.56rem auto;
+}
+
+.group {
+    margin-bottom: 2.8rem;
+}
+
+.label-input {
+    display: block;
+    margin-bottom: 0.2rem;
+
+    span {
+        color: red;
+    }
+}
+
+.input {
+    width: 100%;
+    height: var(--form-height);
+    padding: 0.4rem 0.8rem;
+
+    border: 0.1rem solid #d8d8d8;
+    border-radius: 0.3rem;
+
+    color: #55595c;
+    font-size: 1.4rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.line {
+    border-bottom: 0.1rem solid #ddd;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-login {
+    display: block;
+    margin: 1rem auto 2rem;
+
+    height: var(--form-height);
+    padding: 0 3rem;
+
+    background-color: var(--white);
+    border: 0.1rem solid var(--primary);
+    border-radius: 0.3rem;
+
+    color: var(--primary);
+    font-weight: 600;
+
+    &:hover {
+        background-color: var(--primary);
+        color: var(--white);
+        cursor: pointer;
+    }
+}
+
+.link {
+    margin-left: 0.4rem;
+
+    &:hover {
+        color: var(--primary);
+    }
+}
+
+.link-forgot-password {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+        color: #0080bf;
+        text-decoration: underline;
+    }
+}
+
+.invalid-input {
+    border-color: #a94442;
+}
+
+.invalid-message {
+    display: block;
+    margin: 1rem 0;
+    color: #a94442;
+}
+
+@media screen and (max-width: 739px) {
+    .wrapper {
+        width: 30rem;
+    }
+}

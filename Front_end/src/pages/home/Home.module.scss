@@ -1,0 +1,122 @@
+.wrapper {
+    width: 100%;
+    min-height: calc(100vh - var(--height-header) - var(--height-footer));
+    padding: 2rem 0;
+    margin-top: var(--height-header);
+}
+
+.section {
+    width: 100%;
+    padding: 0.7rem 0;
+}
+
+.section-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.7rem 0;
+}
+
+.btn-viewmore {
+    min-width: 11.2rem;
+    padding: 0.8rem 2.4rem;
+
+    border: none;
+    border-radius: 3rem;
+    background-color: #f8663d;
+
+    color: var(--white);
+    font-size: 1.4rem;
+    text-decoration: none;
+
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+
+.section-cate {
+    --height-cate: 4rem;
+
+    display: flex;
+    justify-content: space-between;
+    height: var(--height-cate);
+    margin-bottom: 1.8rem;
+    background-color: #f7f7f7;
+
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.cate-title {
+    --border-radius-right: 0.4rem;
+    --cate-title-yellow: #ffce07;
+    --cate-title-black: #21242b;
+
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    padding: 0 1.6rem;
+
+    color: var(--white);
+    line-height: var(--height-cate);
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    border-top-right-radius: var(--border-radius-right);
+    border-bottom-right-radius: var(--border-radius-right);
+
+    &--yellow {
+        background-color: var(--cate-title-yellow);
+    }
+
+    &--black {
+        background-color: #21242b;
+    }
+
+    &::before {
+        --height-arrow: 1.9rem;
+
+        position: absolute;
+        content: '';
+        right: -6px;
+        content: '';
+        border-top: var(--height-arrow) solid transparent;
+        border-right: none;
+        border-bottom: var(--height-arrow) solid transparent;
+        border-left: 1.3rem solid;
+    }
+
+    &--yellow::before {
+        border-left-color: var(--cate-title-yellow);
+    }
+
+    &--black::before {
+        border-left-color: var(--cate-title-black);
+    }
+}
+
+.cate-link {
+    margin-right: 1rem;
+
+    color: var(--text-color);
+    font-size: 1.3rem;
+    line-height: var(--height-cate);
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+        color: var(--primary);
+        cursor: pointer;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 739px) {
+    .section {
+        --padding-horizontal: 1rem;
+
+        padding-right: var(--padding-horizontal);
+        padding-left: var(--padding-horizontal);
+    }
+}

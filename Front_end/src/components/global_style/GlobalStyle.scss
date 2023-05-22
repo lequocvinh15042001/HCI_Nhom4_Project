@@ -1,0 +1,83 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+:root {
+    // width height
+    --height-header: 6.8rem;
+    --height-footer: 3.6rem;
+    --width-sidebar: 7.2rem;
+
+    // text color
+    --text-color: #333;
+
+    // color
+    --start-primary: #f53d2d;
+    --end-primary: #f63;
+    --primary: #ee4d2d;
+    --second-primary: #0ea5e5;
+    --third-primary: #ed3f46;
+    --white: #fff;
+    --black: #000;
+
+    --font-family: 'Roboto', sans-serif;
+    --line-height: 1.5;
+    --font-size: 1.6rem;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    text-rendering: optimizeSpeed;
+}
+
+button,
+input,
+[tab-index] {
+    outline: none;
+    background: transparent;
+}
+
+ul {
+    list-style: none;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    color: var(--white);
+    background-color: #43bac0;
+}
+
+td {
+    color: var(--text-color);
+}
+
+tr:nth-child(even) {
+    background-color: #f2e9e9;
+}
+
+td:first-child {
+    color: var(--second-primary);
+}

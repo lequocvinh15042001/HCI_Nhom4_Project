@@ -1,0 +1,7 @@
+.wrapper {
+    --theme: #efefef;
+
+    min-height: calc(100vh - var(--height-header) - var(--height-footer));
+    padding: 4.8rem 0;
+    background-color: var(--theme);
+}

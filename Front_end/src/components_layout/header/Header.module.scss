@@ -1,0 +1,150 @@
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: var(--height-header);
+    background: linear-gradient(
+        -180deg,
+        var(--start-primary),
+        var(--end-primary)
+    );
+    z-index: 100;
+}
+
+.wrapper {
+    --padding-vertical: 1.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--height-header);
+    padding-top: var(--padding-vertical);
+    padding-bottom: var(--padding-vertical);
+}
+
+.wrapper-section {
+    display: flex;
+    align-items: center;
+
+    &--grow {
+        flex: 1;
+    }
+
+    & ~ & {
+        margin-left: 5rem;
+    }
+}
+
+.logo {
+    color: var(--white);
+    margin-right: 4.8rem;
+
+    svg {
+        width: 12rem;
+        fill: currentColor;
+    }
+}
+
+.menu-btn {
+    --padding-vertical: 0.8rem;
+
+    display: none;
+    padding-top: var(--padding-vertical);
+    padding-bottom: var(--padding-vertical);
+    border: none;
+
+    &__icon {
+        color: var(--white);
+        font-size: 1.8rem;
+    }
+
+    &:active {
+        background-color: #d75d03;
+    }
+
+    &:hover {
+        box-shadow: none;
+    }
+}
+
+.wrapper-cart-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    margin: 0 1rem;
+}
+
+.cart-icon {
+    position: relative;
+    border: none;
+    padding: 0;
+
+    svg {
+        color: var(--white);
+        font-size: 2rem;
+    }
+
+    span {
+        position: absolute;
+        top: -1.2rem;
+        right: -1.8rem;
+
+        min-width: 2.2rem;
+        height: 2rem;
+        line-height: 1.6rem;
+        padding: 0 0.6rem;
+
+        font-size: 1.4rem;
+        color: var(--primary);
+
+        background-color: var(--white);
+        border: 0.2rem solid var(--primary);
+        border-radius: 4.2rem;
+        z-index: 1;
+    }
+}
+
+// Responsive
+
+/* Mobile, Tablet */
+@media screen and (max-width: 1023px) {
+    :root {
+        --height-header: 6rem !important;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+    .wrapper-section {
+        justify-content: space-between;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 739px) {
+    .wrapper-section {
+        justify-content: space-between;
+
+        & ~ & {
+            margin-left: 0;
+        }
+    }
+
+    .menu-btn {
+        margin-right: 0.8rem;
+    }
+
+    .wrapper-cart-icon {
+        margin: 0 2rem;
+    }
+}

@@ -1,0 +1,25 @@
+.comment {
+    &-actions {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 0.4rem;
+    }
+
+    &-small-text {
+        margin: 0rem 0.6rem;
+        color: #acacac;
+        font-size: 1.4rem;
+    }
+}
+
+.button {
+    text-transform: none;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+        color: var(--primary);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,22 @@
+.group {
+    margin-top: 1.6rem;
+}
+
+.label-input {
+    display: block;
+    margin-left: 0.2rem;
+    margin-bottom: 0.2rem;
+
+    color: var(--text-color);
+    font-size: 1.6rem;
+
+    span {
+        color: red;
+    }
+}
+
+.invalid-message {
+    display: block;
+    margin: 1rem 0;
+    color: #a94442;
+}

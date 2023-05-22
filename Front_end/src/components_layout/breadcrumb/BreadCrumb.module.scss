@@ -1,0 +1,36 @@
+.wrapper {
+    margin-top: var(--height-header);
+    background-color: #efefef;
+}
+
+.bread-crumb {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.bread-crumb-text {
+    font-size: 1.4rem;
+}
+
+.bread-crumb-icon {
+    margin: 0 0.4rem;
+    color: #777;
+    font-size: 1rem;
+}
+
+.url {
+    color: #777;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--primary);
+    }
+}
+
+.current {
+    color: var(--primary);
+    font-weight: 600;
+    cursor: default;
+}

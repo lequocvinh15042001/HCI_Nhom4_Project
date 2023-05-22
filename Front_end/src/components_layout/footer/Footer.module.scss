@@ -1,0 +1,15 @@
+.footer {
+    width: 100%;
+    height: var(--height-footer);
+    background-color: #0f0f0f;
+
+    &__context {
+        display: block;
+        width: max-content;
+        padding: 0.6rem 0;
+        margin: 0 auto;
+
+        color: #6d6d6d;
+        user-select: none;
+    }
+}

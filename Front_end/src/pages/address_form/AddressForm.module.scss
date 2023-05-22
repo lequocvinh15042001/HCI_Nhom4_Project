@@ -1,0 +1,25 @@
+// .group {
+//     padding-bottom: 0.8rem;
+// }
+
+.input {
+    width: 76%;
+
+    &-checkbox {
+        width: 2rem;
+        margin-right: 0.8rem;
+    }
+}
+
+.btn {
+    letter-spacing: 0.08rem;
+
+    & ~ & {
+        margin-left: 1rem;
+    }
+}
+
+.font-icon {
+    margin-right: 0.4rem;
+    font-size: 1.6rem;
+}

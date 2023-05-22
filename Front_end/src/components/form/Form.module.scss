@@ -1,0 +1,25 @@
+.form {
+    margin-top: 4rem;
+}
+
+// Responsive
+@media screen and (max-width: 1200px) {
+}
+
+/* Mobile, Tablet */
+@media screen and (max-width: 1023px) {
+    .product {
+        max-width: 100%;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* Mobile */
+@media screen and (max-width: 739px) {
+    .form {
+        padding: 0 0.8rem;
+    }
+}

@@ -1,0 +1,31 @@
+.wrapper-content {
+    min-height: 5rem;
+    padding: 0.8rem;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    text-align: left;
+    background-color: #f2f3f5;
+    border-radius: 1.4rem;
+}
+
+.td {
+    &-review-id,
+    &-user,
+    &-product {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &-review-id {
+        max-width: 12rem;
+    }
+
+    &-user {
+        max-width: 20rem;
+    }
+
+    &-product {
+        max-width: 23rem;
+    }
+}

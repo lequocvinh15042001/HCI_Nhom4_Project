@@ -1,0 +1,11 @@
+.empty-cart {
+    &__image {
+        display: block;
+        height: 20rem;
+        margin: 1rem auto;
+    }
+
+    &__button {
+        text-align: center;
+    }
+}

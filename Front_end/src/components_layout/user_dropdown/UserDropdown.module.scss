@@ -1,0 +1,55 @@
+@keyframes menuToBottom {
+    from {
+        opacity: 0;
+        top: 88%;
+    }
+    to {
+        opacity: 1;
+        top: 100%;
+    }
+}
+
+.menu {
+    min-width: 18rem;
+    min-height: 100%;
+    height: max-content;
+    padding: 0 1rem;
+
+    background-color: var(--white);
+    border: 0.1rem solid var(--primary);
+    border-radius: 1rem;
+
+    list-style: none;
+    cursor: default;
+    overflow: hidden;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 0.4rem 0;
+    }
+
+    &__item ~ &__item {
+        border-top: 1px solid #0000000d;
+    }
+}
+
+.list {
+    &__item {
+        padding: 0.6rem 0;
+    }
+
+    &__button {
+        border: none;
+
+        color: #666;
+        font-size: 1.4rem;
+        text-transform: none;
+        text-decoration: none;
+
+        &:hover {
+            color: #292929;
+            cursor: pointer;
+        }
+    }
+}

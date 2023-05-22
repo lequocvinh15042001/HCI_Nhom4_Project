@@ -1,0 +1,47 @@
+.btn {
+    letter-spacing: 0.08rem;
+
+    & ~ & {
+        margin-left: 1rem;
+    }
+}
+
+.addresses {
+    margin-top: 1.6rem;
+    padding: 0 0.8rem;
+}
+
+.address {
+    padding: 1rem 0;
+
+    & ~ & {
+        border-top: 0.2rem solid #eee;
+    }
+}
+
+.group {
+    margin: 1rem 0;
+}
+
+.field {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.text {
+    margin-left: 1.2rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.04rem;
+}
+
+.font-icon {
+    margin-right: 0.4rem;
+    font-size: 1.6rem;
+}
+
+.default {
+    margin-left: 0.4rem;
+    color: var(--third-primary);
+    font-size: 1.6rem;
+    letter-spacing: 0.04rem;
+}
